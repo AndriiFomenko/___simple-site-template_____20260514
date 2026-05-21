@@ -1,0 +1,20 @@
+@use "../abstracts" as *;
+
+/* Video section */
+.video {
+  margin-top: -$gap-xl; /* -40px */
+  padding-bottom: 100px;
+
+  background-color: $color-gray-light;
+
+  &__iframe {
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    border: 0;
+
+    aspect-ratio: 16/9;
+  }
+}

@@ -1,0 +1,9 @@
+@use "../abstracts" as *;
+
+/* Header section */
+.header {
+  padding-top: 68px;
+  padding-bottom: 141px;
+
+  background-color: $color-gray-light;
+}

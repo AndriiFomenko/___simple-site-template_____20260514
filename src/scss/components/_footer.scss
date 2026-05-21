@@ -1,0 +1,21 @@
+@use "../abstracts" as *;
+
+.footer {
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  color: $color-white;
+  background-color: $color-primary;
+
+  &__title {
+    margin-bottom: 3px;
+
+    font-size: 1.3125rem; /* 21px */
+    font-weight: $font-medium;
+  }
+
+  &__description {
+    font-size: 0.8125rem; /* 13px */
+  }
+}
+

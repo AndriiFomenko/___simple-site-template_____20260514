@@ -1,0 +1,19 @@
+@use "skin" as *;
+@use "variables" as *;
+
+@mixin section() {
+  padding-top: 110px;
+  padding-bottom: 90px;
+
+  text-align: center;
+
+  &__title {
+    margin-bottom: 36px;
+  }
+
+  &__description {
+    color: $color-secondary;
+
+    line-height: $line-height;
+  }
+}

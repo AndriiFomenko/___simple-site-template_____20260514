@@ -1,0 +1,7 @@
+@use "../abstracts" as *;
+
+.process {
+  background-color: $color-gray-light;
+
+  @include section;
+}
