@@ -3,7 +3,13 @@
 /* Header section */
 .header {
   padding-top: 68px;
-  padding-bottom: 141px;
 
   background-color: $color-gray-light;
+
+  @include md-min {
+    padding-bottom: 141px;
+  }
+  @include md {
+    padding-bottom: 70px;
+  }
 }

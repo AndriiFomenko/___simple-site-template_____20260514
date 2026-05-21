@@ -9,10 +9,13 @@
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    gap: 30px;
-    justify-content: space-between;
 
-    @media (max-width: $lg) {
+    @include lg-min() {
+      gap: 30px;
+      justify-content: space-between;
+    }
+
+    @include lg() {
       gap: 40px;
       justify-content: center;
     }
@@ -24,7 +27,6 @@
   align-items: center;
   flex-direction: row-reverse;
   gap: 15px;
-
   color: $color-white;
 
   &__description {

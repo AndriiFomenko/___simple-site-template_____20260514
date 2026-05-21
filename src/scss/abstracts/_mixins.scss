@@ -1,11 +1,19 @@
 @use "skin" as *;
 @use "variables" as *;
+@use "mixins-media" as *;
 
 @mixin section() {
-  padding-top: 110px;
-  padding-bottom: 90px;
-
   text-align: center;
+
+  @include md-min {
+    padding-top: 110px;
+    padding-bottom: 90px;
+  }
+
+  @include md {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 
   &__title {
     margin-bottom: 36px;

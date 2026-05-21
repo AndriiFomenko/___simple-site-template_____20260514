@@ -3,10 +3,19 @@
 /* Hero section */
 .hero {
   display: flex;
-  align-items: flex-start;
   flex-direction: column;
 
   max-width: $container-secondary;
+
+  @include md-min {
+    align-items: flex-start;
+  }
+
+  @include md {
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+  }
 
   &__title {
     margin-top: 0;
